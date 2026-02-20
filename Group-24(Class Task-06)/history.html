@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" href="index.css" type="text/css">
+</head>
+
+<body>
+    <div class="w-100">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark position-fixed w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Avengers Wiki</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="history.html">History</a>
+                        <a class="nav-link" href="characters.html">Characters</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+    <div class="container pt-5">
+        <h3>There Was an Idea</h3>
+        <p>
+            The Avengers Initiative was the brainchild of S.H.I.E.L.D. Director Nick Fury. 
+            <span class="hidden-content" style="display: none;">
+                He first approached Tony Stark with the idea, following Tony’s defeat of Obadiah Stane and his subsequent public announcement that he was Iron Man. Fury kept his eye on several potential members, as Bruce Banner struggled with life as the Hulk, the Asgardian Thor appeared on Earth, and Steve Rogers, AKA World War II hero Captain America, was discovered alive decades after his apparent death. In the meantime, some of S.H.I.E.L.D.’s most skilled members, Black Widow (Natasha Romanoff), and Hawkeye (Clint Barton), were making a name for themselves and impressing Fury.
+            </span>
+        </p>
+        <p class="hidden-content" style="display: none;">
+            Once the Asgardian trickster god Loki arrived on Earth and absconded with the massively powerful object
+            known as the Tesseract—possessing Hawkeye and turning him into his brainwashed pawn in the process—Fury
+            found it necessary to finally bring together his potential super team, calling in Romanoff, Banner, Rogers
+            and Stark. Captain America and Iron Man, assisted by Black Widow, were able to capture Loki, but during
+            their flight back to S.H.I.E.L.D., Thor arrived, attempting to bring his brother back to Asgard to face
+            justice. A fight ensued between Thor and Iron Man, but Captain America broke it up, and the group all
+            returned with their prisoner, Loki, to the S.H.I.E.L.D. Helicarrier.
+        </p>
+        <div class="d-flex justify-content-center align-items-center hidden-content" style="display: none;">
+            <img class="rounded mx-auto" loading="lazy" src="https://cdn.marvel.com/content/1x/001avn_ons_inl_01_0.jpg">
+        </div>
+        <p>
+            While Stark and Banner found some common ground through their love of science,
+			<span class="hidden-content" style="display: none;">
+				the would-be team were at
+            	odds as they discussed their next course of action, and arguments escalated in the wake of discovering that
+            	S.H.I.E.L.D. had been using the Tesseract to recreate dangerous HYDRA weapons.
+			</span>
+        </p>
+        <p class="hidden-content" style="display: none;">
+            Loki revealed that it was his plan to be captured all along and triggered Banner to turn into the Hulk.
+            While engaging in a fight with Thor, Hulk nearly destroyed the Helicarrier, before crashing down to Earth.
+            Escaping in the chaos, Loki then ejected Thor from the Helicarrier in his own enclosed cell and retrieved
+            his scepter, killing Phil Coulson with it. Black Widow fought Hawkeye, who had arrived to help Loki,
+            managing to bring her friend back to his true self in the process. Loki continued on to New York where, with
+            the help of the brainwashed Dr. Erik Selvig, he opened a portal into space, unleashing a devastating
+            Chitauri army.
+        </p>
+        <p class="hidden-content" style="display: none;">
+            Motivated by the tragic death of Phil Coulson, Iron Man, Black Widow, Captain America, and Hawkeye all
+            headed to New York to fight Loki and his invading Chitauri forces, and were soon joined again by Thor and
+            Hulk, with the six heroes truly assembling as the Avengers for the first time.
+        </p>
+        <div class="d-flex justify-content-center align-items-center hidden-content" style="display: none;">
+            <img class="rounded mx-auto" loading="lazy" src="https://cdn.marvel.com/content/1x/001avn_ons_inl_02_0.jpg">
+        </div>
+
+        <div class="vote"></div>
+        <div class="comments mt-2">
+            <h5>Comments</h5>
+        </div>
+
+        <div class="d-flex flex-row gap-2 justify-content-center align-items-center mt-5">
+            <button class="btn btn-primary" id="btn-like">
+                <i class="bi bi-hand-thumbs-up"></i>
+            </button>
+            <button class="btn btn-outline-danger" id="btn-dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+            </button>
+            <button class="btn btn-outline-warning" id="btn-star">
+                <i class="bi bi-star"></i>
+            </button>
+        </div>
+
+        <div class="d-flex flex-column mt-2">
+            <div class="form-floating">
+                <textarea id="txt-comment" class="form-control" placeholder="Leave a comment here"></textarea>
+                <label for="txt-comment">Leave a comment here...</label>
+                <div class="d-flex flex-row justify-content-end">
+                    <button id="btn-post-comment" class="btn btn-primary mt-2">Post</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button id="btn-run-demonstration" class="btn btn-success">Run Demonstration</button>
+        </div>
+    </div>
+	
+	<footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Avengers Wiki. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const runDemonstration = () => {
+            // Show all hidden content
+            $(".hidden-content").show();
+            // Change the background color of the container
+            $(".container").css("background-color", "#f8f9fa");
+            // Show an alert to indicate that the demonstration has run
+            alert("Demonstration has been executed!");
+        };
+
+        // Event listener for the run demonstration button
+        $("#btn-run-demonstration").on("click", runDemonstration);
+
+        const postVote = (type) => {
+            $(".vote").empty();
+            switch(type){
+                case 0: //liked
+                    $(".vote").append(`<div class="d-flex flex-row justify-content-center align-items-center">You <i class="bi bi-hand-thumbs-up"> it!</i></div>`);
+                    break;
+                case 1: //disliked
+                    $(".vote").append(`<div class="d-flex flex-row justify-content-center align-items-center">You <i class="bi bi-hand-thumbs-down"> it!</i></div>`);
+                    break;
+                case 2: // star
+                    $(".vote").append(`<div class="d-flex flex-row justify-content-center align-items-center ">You <i class=" bi bi-star"> it!</i></div>`);
+                    break;
+                default:
+                    // do nothing
+                    break;
+            }
+        };
+
+        const postComment = (content) => {
+            const today = new Date(Date.now());
+            const dateTime = `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()} ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+            $(".comments").append(`<div class="card mt-2">
+                <h5 class="card-header">Anonymous - ${dateTime}</h5>
+                <div class="card-body">
+                  <p class="card-text">${content}</p>
+                </div>
+              </div>`);
+        };
+
+        $("#btn-like").on("click", (e) => {
+            postVote(0);
+        });
+
+        $("#btn-dislike").on("click", (e) => {
+            postVote(1);
+        });
+
+        $("#btn-star").on("click", (e) => {
+            postVote(2);
+        });
+
+        $("#btn-post-comment").on("click", (e) => {
+            postComment($("#txt-comment").val()); 
+            $("#txt-comment").val("");
+        });
+
+        $("h1").on("mouseenter", (e) => {
+            $(e.target).css("text-shadow", "0px 0px 20px #00000075");
+        });
+
+        $("h1").on("mouseleave", (e) => {
+            $(e.target).css("text-shadow", "unset");
+        });
+
+        const cards = document.getElementsByClassName("col");
+        for(let i = 0; i < cards.length; i++){
+            $(cards.item(i)).on("mouseenter", (e) => {
+                $(cards.item(i)).css("background-color", "#dddddd");
+            });
+
+            $(cards.item(i)).on("mouseleave", (e) => {
+                $(cards.item(i)).css("background-color", "unset");
+            }); 
+        }
+    </script>
+</body>
+
+</html>

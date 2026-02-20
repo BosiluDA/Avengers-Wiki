@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avengers Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="w-100">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark position-fixed w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="history.html">History</a>
+                        <a class="nav-link" href="characters.html">Characters</a>
+                    </div>
+
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    
+                    <a style="margin-left: 5px;" class="nav-link" href="login/login.html">Sign up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container pt-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img loading="lazy" src="https://wallpaperaccess.com/full/1079146.jpg" class="d-block w-100 img-fluid"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img loading="lazy"
+                            src="https://images.hdqwalls.com/download/avengers-endgame-poster-2e-3840x2160.jpg"
+                            class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img loading="lazy"
+                            src="https://images.hdqwalls.com/download/avengers-endgame-2019-official-new-poster-3p-1920x1080.jpg"
+                            class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex flex-column text-center pt-5">
+            <h4>Menu</h4>
+        </div>
+        <div class="container-fluid">
+            <div class="row" id="cardButtonsContainer">
+                <a href="#" class="col card m-2 p-2 text-center text-decoration-none" style="width: 18rem;">
+                    <img loading="lazy" src="https://logos-world.net/wp-content/uploads/2020/05/Avengers-Emblem.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Home</p>
+                    </div>
+                </a>
+                <a href="history.html" class="col card m-2 p-2 text-center text-decoration-none" style="width: 18rem;">
+                    <img loading="lazy" src="https://logos-world.net/wp-content/uploads/2020/05/Avengers-Emblem.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">History</p>
+                    </div>
+                </a>
+                <a href="characters.html" class="col card m-2 p-2 text-center text-decoration-none" style="width: 18rem;">
+                    <img loading="lazy" src="https://logos-world.net/wp-content/uploads/2020/05/Avengers-Emblem.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Characters</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="d-flex flex-row justify-content-between">
+            <h4>An Overview</h4>    
+            <button id="btnHideTable" class="btn btn-outline-secondary mb-2">Hide</button>
+        </div>
+        <div id="content-container" class="d-flex flex-row">
+            <div id="content">
+                <p>"The Avengers. That's what we call ourselves. We're sort of like a team. 'Earth's Mightiest
+                    Heroes'-type
+                    thing."
+                    ―Tony Stark to Loki[src]
+                    The Avengers were a team of extraordinary individuals, with either superpowers or other special
+                    characteristics. Though primarily affiliated with the interests of the United States of America, the
+                    group's purpose was to protect global stability from inner or extraterrestrial threats. The Avengers
+                    were first assembled by S.H.I.E.L.D. as a result of the Avengers Initiative, when Loki invaded Earth
+                    with his Chitauri army. The team, consisting of Iron Man, Captain America, Hulk, Thor, Black Widow
+                    and
+                    Hawkeye defeated Loki and went their separate ways for a while.</p>
+
+                <p>
+                    After S.H.I.E.L.D. became a defunct agency due to the HYDRA infiltration, the team was no longer an
+                    American governmental division, therefore becoming an independent and private organization. Stark
+                    Industries remodeled Stark Tower into Avengers Tower and the team joined in the fight against HYDRA.
+                    After their victory, Stark built Ultron, hoping that the A.I. would be able to defend the world from
+                    any
+                    threats necessary in place of the Avengers. The plan backfired and Ultron started a war against
+                    humanity, forcing the Avengers to fight him. When Ultron was defeated, Hulk, Barton, Thor and Stark
+                    left
+                    the team, so Wanda Maximoff, Vision, War Machine and Falcon were recruited, and they were relocated
+                    to
+                    the Avengers Compound.
+                    <span class="dot-line">.......</span>
+                </p>
+                <p class="more-content">
+                    Under Captain America's leadership, the team completed several operations around the world with
+                    success,
+                    until the amount of collateral damage during their conflicts caused the United Nations to pass the
+                    Sokovia Accords in an attempt to regulate their actions, turning the team from a private
+                    organization to
+                    one which was under the control of a governmental body. The differences in opinions created a rift
+                    within the team which split the Avengers into two factions, one led by Iron Man and the other by
+                    Captain
+                    America. After Captain America was able to stop Helmut Zemo, the instigator of their fight, the team
+                    was
+                    divided; Iron Man, Vision and War Machine remained official members, while a small group consisting
+                    of
+                    Captain America, Black Widow, and Falcon continued to operate in the shadows. Stark would try to
+                    boost
+                    the Avengers' membership by inviting Spider-Man to join, but the young hero turned down the offer to
+                    remain closer to the people he had sworn to protect.
+                </p>
+                <p class="more-content">
+                    Two years after the Accords were ratified, Thanos launched a crusade against the universe in his
+                    quest
+                    to gather the Infinity Stones. The Avengers were split up into different groups as they fought to
+                    combat
+                    Thanos before he succeeded, joining forces with the Masters of the Mystic Arts, the Wakandans, and
+                    the
+                    Guardians of the Galaxy. Iron Man and Spider-Man went to Titan alongside Doctor Strange, where they
+                    allied with Star-Lord, Nebula, Mantis and Drax to try to stop Thanos, while Captain America, Banner,
+                    Black Widow, War Machine, Falcon, Thor, Groot, Rocket Raccoon and Maximoff protected Vision from the
+                    Black Order in Wakanda. The team on Wakanda was successful in killing Thanos' minions, but the team
+                    on
+                    Titan was defeated. Thanos arrived and overpowered the heroes on Wakanda with ease before killing
+                    Vision
+                    to acquire the Mind Stone, thus completing the Infinity Gauntlet, and eradicating half of the
+                    universe's
+                    population. Among the victims were Falcon, Maximoff, and Spider-Man; with Iron Man, Captain America,
+                    Thor, Banner, Black Widow and War Machine being the only Avengers to survive the war. Despite them
+                    managing to kill Thanos, the victory was empty, as the Infinity Stones were destroyed, ensuring no
+                    chances of undoing the Snap. This resulted in Iron Man, Captain America and Thor retiring from the
+                    team.
+                    Black Widow then became the team's new leader, commanding War Machine as well as new members Rocket,
+                    Nebula, Captain Marvel and Okoye, as they strove to maintain order on Earth and the wider universe.
+                </p>
+                <p class="more-content">
+                    Five years later, Ant-Man escaped from the Quantum Realm and provided the Avengers with a chance to
+                    time
+                    travel, so the Avengers assembled once more. With Ant-Man officially joining the roster, the
+                    Avengers
+                    initiated a Time Heist, where they traveled to alternate timelines and collected the six Infinity
+                    Stones. Returning to their timeline with the Stones, at the cost of Black Widow's life, Banner
+                    donned
+                    the Nano Gauntlet and was able to resurrect those who died in the Snap. However, an alternate
+                    timeline
+                    Thanos and his army had followed them, sparking the immense Battle of Earth, where Iron Man gave his
+                    life to defeat Thanos and his army. With the battle won and over, and the remaining members going
+                    their
+                    separate ways, the Avengers effectively disbanded.
+                </p>
+                <div class="d-flex justify-content-center align-items-center m-2">
+                    <button id="read-more-btn" class="btn btn-outline-primary">Read more</button>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="2">Avengers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Founder</th>
+                        <td>Nick Fury</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mutable former members</th>
+                        <td>
+                            <ul>
+                                <li>Hulk</li>
+                                <li>Thor</li>
+                                <li>Hawkeye</li>
+                                <li>Quicksilver</li>
+                                <li>Scarlet Witch</li>
+                                <li>Vision</li>
+                                <li>War Machine</li>
+                                <li>Ant-Man</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Vehicles</th>
+                        <td>
+                            <ul>
+                                <li>Quinjet</li>
+                                <li>Benator</li>
+                                <li>Luis' Van</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Headquarters</th>
+                        <td>
+                            <ul>
+                                <li>Avengers Tower</li>
+                                <li>Avengers Compound</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Location</th>
+                        <td>
+                            Worldwide
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h4>Add New Record</h4>
+        <form id="newRecordForm">
+            <input type="text" id="name" placeholder="Name" class="form-control mb-2" required>
+            <input type="text" id="realName" placeholder="Real Name" class="form-control mb-2" required>
+            <input type="text" id="status" placeholder="Status" class="form-control mb-2" required>
+            <input type="text" id="team" placeholder="Team" class="form-control mb-2" required>
+            <input type="text" id="abilities" placeholder="Abilities" class="form-control mb-2" required>
+            <button type="submit" class="btn btn-primary">Add Record</button>
+        </form>
+    
+        <h4 class="mt-5" style="margin-bottom: 200px ;">Fetched Records</h4>
+        <div id="recordsContainer" class="mt-3"></div>
+    </div>
+    
+    <script>
+    $(document).ready(() => {
+        // Fetch all records on page load
+        fetchRecords();
+    
+        // Handle form submission to add a new record
+        $("#newRecordForm").on("submit", function (e) {
+            e.preventDefault();
+    
+            const newRecord = {
+                name: $("#name").val(),
+                realName: $("#realName").val(),
+                status: $("#status").val(),
+                team: $("#team").val(),
+                abilities: $("#abilities").val()
+            };
+    
+            $.ajax({
+                url: 'postData.php',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(newRecord),
+                success: function (response) {
+                    alert(response.message);
+                    fetchRecords(); // Refresh records
+                    $("#newRecordForm")[0].reset(); // Reset form fields
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error adding record:", xhr.responseText, status, error);
+                    alert("Error adding record. Check the console for details.");
+                }
+            });
+        });
+    
+        // Fetch all records from the server
+        function fetchRecords() {
+            $.ajax({
+                url: 'getData.php',
+                method: 'GET',
+                success: function (data) {
+                    let output = "<ul>";
+                    if (Array.isArray(data)) {
+                        data.forEach(record => {
+                            output += `<li>${record.name} (${record.realName}) - ${record.status} - ${record.team} - ${record.abilities}</li>`;
+                        });
+                    } else {
+                        output += "<li>No records found</li>";
+                    }
+                    output += "</ul>";
+                    $("#recordsContainer").html(output);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error fetching records:", xhr.responseText, status, error);
+                    alert("Error fetching records. Check the console for details.");
+                }
+            });
+        }
+    });
+    </script>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Avengers Wiki. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let tableIsVisible = true;
+        let moreContent = false;
+
+        $(document).ready(() => {
+            $(".more-content").hide();
+        });
+
+        // Hide/Show table
+        $("#btnHideTable").on("click", () => {
+            const table = $("#content-container").find("table");
+            tableIsVisible ? table.hide() : table.show();
+            $("#btnHideTable").text(tableIsVisible ? "Show" : "Hide");
+            tableIsVisible = !tableIsVisible;
+        });
+
+        // Read more/Read less button
+        $("#read-more-btn").on("click", () => {
+            if (moreContent) {
+                $(".more-content").hide();
+                $("#read-more-btn").text("Read More");
+            } else {
+                $(".more-content").show();
+                $("#read-more-btn").text("Read Less");
+            }
+            moreContent = !moreContent;
+            $("#content").fadeOut(200).fadeIn(200);
+        });
+
+        // DOM Traversal example-elements which have class name card retrieved
+        
+        document.querySelectorAll('.card').forEach(card => {
+            console.log(card);
+        });
+
+        // DOM Modification - Change text of the header
+
+        document.querySelector('h4').textContent = 'Updated Overview';
+
+        // DOM Attribute Modification example- Change the link
+
+        document.querySelector('.navbar-brand').setAttribute('href', 'https://example.com');
+
+        // CSS Manipulation example- Change background color of the body
+
+        document.body.style.backgroundColor = "#f0f8ff";
+
+
+
+
+    // Change button color on focus
+    $("#btnHideTable").on("focus", function() {
+        $(this).css("background-color", "grey");
+    }).on("blur", function() {
+        $(this).css("background-color", "");
+    });
+
+    // Display alert on carousel item click
+    $("#carouselExampleAutoplaying .carousel-item img").on("click", function() {
+        alert("Carousel image clicked!");
+    });
+
+// Fade out a specific card on button click
+$("#btnHideTable").on("click", function() {
+    $("#cardButtonsContainer .card").first().fadeToggle(1000);
+});
+
+
+
+// Animate the width of the navbar on hover
+$(".navbar").hover(function() {
+    $(this).animate({ width: "80%" }, 500);
+}, function() {
+    $(this).animate({ width: "100%" }, 500);
+});
+
+        // Change text color of .more-content paragraphs
+    $("p.more-content").css("color", "#007bff");
+
+    // Set background color for the navbar when hovered
+    $(".navbar").hover(
+        function() { $(this).css("background-color", "#333"); },
+        function() { $(this).css("background-color", ""); }
+    );
+
+    // Modify font size of heading text
+    $("h4").css("font-size", "1.5rem");
+
+
+
+// Set a new `alt` text for the last card image
+$("#cardButtonsContainer .card img").last().attr("alt", "Updated Image Alt Text");
+
+// Prepend a heading to the container
+$(".container-fluid").first().prepend("<h2>Welcome to Avengers Wiki</h2>");
+
+
+
+// Traverse to find the first `.card` element and change its background color
+$("#cardButtonsContainer").children(".card").first().css("background-color", "#f0f0f0");
+
+// Find carousel container and add border
+$("#carouselExampleAutoplaying").css("border", "1px solid #ccc");
+
+// Traverse to the next sibling element of the heading and change text
+$("h4").first().next().text("Updated Menu Section");
+
+
+    </script>
+</body>
+
+</html>
